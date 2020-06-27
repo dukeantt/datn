@@ -97,15 +97,12 @@
                                                                 <a href="{{url()->current().'/'.$productItem->id}}"
                                                                    class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
                                                                     <div
-                                                                        class="product_thumbnail with_second_image second_image_loaded"
+                                                                        class="product_thumbnail"
                                                                         style="background-size: cover;">
-                                                                <span class="product_thumbnail_background"
-                                                                      style="background-image:url(https://shopkeeper.wp-theme.design/wp-content/uploads/5983760398347411_03-350x435.jpg)"></span>
                                                                         <img width="350" height="435"
-                                                                             src="https://shopkeeper.wp-theme.design/wp-content/uploads/5983760398347411_01-350x435.jpg"
+                                                                             src="{{$productItem->images}}"
                                                                              class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
                                                                              alt=""
-                                                                             srcset="https://shopkeeper.wp-theme.design/wp-content/uploads/5983760398347411_01-350x435.jpg 350w, https://shopkeeper.wp-theme.design/wp-content/uploads/5983760398347411_01-920x1140.jpg 920w, https://shopkeeper.wp-theme.design/wp-content/uploads/5983760398347411_01-242x300.jpg 242w, https://shopkeeper.wp-theme.design/wp-content/uploads/5983760398347411_01.jpg 1049w"
                                                                              sizes="(max-width: 350px) 100vw, 350px"></div>
                                                                 </a>
                                                             </div>

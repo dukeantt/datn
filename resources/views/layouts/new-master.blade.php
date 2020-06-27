@@ -34,7 +34,7 @@
         <div class="sidebar-wrapper">
             <div class="logo">
                 <a href="/admin" class="simple-text logo-mini">
-                    GS
+                    FV
                 </a>
                 <a href="/admin" class="simple-text logo-normal">
                     Fashion Vietnam
@@ -123,87 +123,6 @@
                     </div>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" data-toggle="collapse" href="#mapsExamples">
-                        <i class="nc-icon nc-pin-3"></i>
-                        <p>
-                            Quản lý nhãn hiệu
-                            <b class="caret"></b>
-                        </p>
-                    </a>
-                    <div class="collapse @yield('show-brand')" id="mapsExamples">
-                        <ul class="nav">
-                            <li class="nav-item @yield('active-list-brand')">
-                                <a class="nav-link" href="/admin/brand">
-                                    <span class="sidebar-mini">-</span>
-                                    <span class="sidebar-normal">Danh sách nhãn hiệu</span>
-                                </a>
-                            </li>
-                            <li class="nav-item @yield('active-create-brand')">
-                                <a class="nav-link" href="/admin/brand/create">
-                                    <span class="sidebar-mini">-</span>
-                                    <span class="sidebar-normal">Thêm nhãn hiệu mới</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" href="#forms2Examples">
-                        <i class="nc-icon nc-notification-70"></i>
-                        <p>
-                            Quản lý Tin tức
-                            <b class="caret"></b>
-                        </p>
-                    </a>
-                    <div class="collapse @yield('show-news')" id="forms2Examples">
-                        <ul class="nav">
-                            <li class="nav-item @yield('active-list-news')">
-                                <a class="nav-link" href="/admin/news">
-                                    <span class="sidebar-mini">-</span>
-                                    <span class="sidebar-normal">Danh sách tin</span>
-                                </a>
-                            </li>
-                            <li class="nav-item @yield('active-create-news')">
-                                <a class="nav-link" href="/admin/news/create">
-                                    <span class="sidebar-mini">-</span>
-                                    <span class="sidebar-normal">Thêm tin mới</span>
-                                </a>
-                            </li>
-                            <li class="nav-item @yield('active-list-comment')">
-                                <a class="nav-link" href="/admin/news/list_comment">
-                                    <span class="sidebar-mini">-</span>
-                                    <span class="sidebar-normal">Quản lí comment</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" href="#tables2Examples">
-                        <i class="nc-icon nc-paper-2"></i>
-                        <p>
-                            Quản lý loại Tin
-                            <b class="caret"></b>
-                        </p>
-                    </a>
-                    <div class="collapse @yield('show-category-news')" id="tables2Examples">
-                        <ul class="nav">
-                            <li class="nav-item @yield('active-list-category-news')">
-                                <a class="nav-link" href="/admin/categoryNews">
-                                    <span class="sidebar-mini">-</span>
-                                    <span class="sidebar-normal">Danh sách loại tin</span>
-                                </a>
-                            </li>
-                            <li class="nav-item @yield('active-create-category-news')">
-                                <a class="nav-link" href="/admin/categoryNews/create">
-                                    <span class="sidebar-mini">-</span>
-                                    <span class="sidebar-normal">Thêm thể loại tin</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item ">
                     <a class="nav-link" data-toggle="collapse" href="#pagesExamples">
                         <i class="nc-icon nc-puzzle-10"></i>
                         <p>
@@ -217,31 +136,6 @@
                                 <a class="nav-link" href="/admin/order">
                                     <span class="sidebar-mini">-</span>
                                     <span class="sidebar-normal">Danh sách đơn hàng</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" data-toggle="collapse" href="#subscriberExamples">
-                        <i class="nc-icon nc-send"></i>
-                        <p>
-                            Quản lý subscriber
-                            <b class="caret"></b>
-                        </p>
-                    </a>
-                    <div class="collapse @yield('show-subcriber')" id="subscriberExamples">
-                        <ul class="nav">
-                            <li class="nav-item @yield('active-list-subcribers')">
-                                <a class="nav-link " href="/admin/subcriber">
-                                    <span class="sidebar-mini">-</span>
-                                    <span class="sidebar-normal">Danh sách subscriber</span>
-                                </a>
-                            </li>
-                            <li class="nav-item @yield('active-send-email')">
-                                <a class="nav-link " href="/admin/subcriber/send-email">
-                                    <span class="sidebar-mini">-</span>
-                                    <span class="sidebar-normal">Gửi email quảng cáo</span>
                                 </a>
                             </li>
                         </ul>

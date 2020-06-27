@@ -30,6 +30,8 @@ function addCart(quantity, product_id) {
             _token: $('meta[name="csrf-token"]').attr('content')
         },
         success: function (resp) {
+            $('#minicart').html(resp.minicart);
+
             var new_count = resp.shopping_cart.count;
             var new_total_money = resp.shopping_cart.total_money;
             var new_items = resp.shopping_cart.items;
@@ -109,7 +111,6 @@ function updateCart(){
                 var itemClass = 'item-' + new_items[i].product.id;
                 $('.num-product.' + itemClass).val(new_items[i].quantity);
                 $('.' + itemClass).text(numeral(new_items[i].quantity * new_items[i].product.dicountPrice).format('0,0') + ' VNĐ');
-                $('h4').text(new_total_money);
             }
             $('.total_price').text(new_total_money);
         },

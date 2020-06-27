@@ -901,7 +901,9 @@
     <script async="" src="https://static.hotjar.com/c/hotjar-1758094.js?sv=6"></script>
     <meta class="foundation-mq">
     <style data-emotion="fcy"></style>
-    <style id="beacon-stylesheet" type="text/css">#beacon-container {
+    <style id="beacon-stylesheet" type="text/css">
+
+        #beacon-container {
             -moz-osx-font-smoothing: grayscale;
             -webkit-font-smoothing: antialiased;
             font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
@@ -985,17 +987,16 @@
                         <div class="site-tools align_left">
                             <ul>
                                 <li class="shopping-bag-button">
-                                    <a href="https://shopkeeper.wp-theme.design/cart/" class="tools_button">
+                                    <a class="tools_button">
                                     <span class="tools_button_icon">
                                         <i class="spk-icon spk-icon-cart-shopkeeper"></i>
                                     </span>
-                                        <span class="shopping_bag_items_number">0</span>
-
+                                        <span class="shopping_bag_items_number header-icons-noti">{{\App\ShoppingCart::getTotalItem()}}</span>
                                     </a>
                                 </li>
                                 <li class="my_account_icon">
                                     <a class="tools_button"
-                                       href="https://shopkeeper.wp-theme.design/my-account/">
+                                       href="user/login/">
                                     <span class="tools_button_icon">
                                         <i class="spk-icon spk-icon-user-account"></i>
                                     </span>
@@ -1009,10 +1010,9 @@
                                 </span>
                                     </a>
                                 </li>
-
                             </ul>
                         </div>
-
+                        <div id="minicart">@include('user.mini-cart')</div>
                         <nav class="show-for-large main-navigation default-navigation align_left"
                              role="navigation">
                             <ul class="menu-main-navigation">
@@ -1176,12 +1176,6 @@
         });
     });
 
-    $('.block2-btn-addwishlist').each(function () {
-        var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
-        $(this).on('click', function () {
-            swal(nameProduct, "is added to wishlist !", "success");
-        });
-    });
 </script>
 
 <!--===============================================================================================-->
@@ -1212,31 +1206,7 @@
     });
 </script>
 
-<script>
-    $('.reset-btn').on('click', function () {
-        $("select[name='gender']").val("male");
-        $('#height').val("");
-        $('#weight').val("");
-        $('#age').val("");
-        $("select[name='days']").val("1.2");
-    });
-    $('#calcBtn').on('click', function () {
-        var gender = $("select[name='gender']").val();
-        var height = parseInt($('#height').val());
-        var weight = parseInt($('#weight').val());
-        var age = parseInt($('#age').val());
-        var days = parseFloat($("select[name='days']").val());
-        var bmr;
-        if (gender === 'male') {
-            bmr = (13.397 * weight) + (4.799 * height) - (5.677 * age) + 88.362;
-        } else {
-            bmr = (9.247 * weight) + (3.098 * height) - (4.330 * age) + 447.593;
-        }
-        var tdee = bmr * days;
-        $('#brm-result').text("BMR (Basal Metabolic Rate) = " + bmr);
-        $('#tdee-result').text("TDEE (Total Daily Energy Expenditure) = " + tdee);
-    })
-</script>
+
 <script>
     $('.modal').on('hidden.bs.modal', function () {
         $(this).find('form')[0].reset();
