@@ -1018,11 +1018,11 @@
                             <ul class="menu-main-navigation">
                                 <li id="shopkeeper-menu-item-5393"
                                     class="mega-menu menu-item menu-item-type-post_type menu-item-object-page menu-item-home">
-                                    <a href="/">Home</a>
+                                    <a href="/">Trang chủ</a>
                                 </li>
                                 <li id="shopkeeper-menu-item-17"
                                     class="mega-menu menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item">
-                                    <a href="/product">Shop</a>
+                                    <a href="/product">Cửa hàng</a>
                                 </li>
                             </ul>
                         </nav>

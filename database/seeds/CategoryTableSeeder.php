@@ -16,31 +16,31 @@ class CategoryTableSeeder extends Seeder
         \Illuminate\Support\Facades\DB::table('category')->insert([
             [
                 'id' => '1',
-                'name' => 'JACKETS',
+                'name' => 'ÁO KHOÁC',
                 'description' => 'Áo khoác',
                 'status' => '1',
             ],
             [
                 'id' => '2',
-                'name' => 'HOODIES',
+                'name' => 'ÁO HOODIES',
                 'description' => 'Áo hoodies',
                 'status' => '1',
             ],
             [
                 'id' => '3',
-                'name' => 'TROUSERS',
+                'name' => 'QUẦN',
                 'description' => 'Quần',
                 'status' => '1',
             ],
             [
                 'id' => '4',
-                'name' => 'ACCESSORIES',
+                'name' => 'PHỤ KIỆN',
                 'description' => 'Phụ kiện',
                 'status' => '1',
             ],
             [
                 'id' => '5',
-                'name' => 'SHOES',
+                'name' => 'GIẦY',
                 'description' => 'Giầy',
                 'status' => '1',
             ],

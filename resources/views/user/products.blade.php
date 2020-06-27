@@ -24,31 +24,31 @@
                                     <li class="category_item">
                                         <a href="https://shopkeeper.wp-theme.design/product-category/jackets/"
                                            class="category_item_link">
-                                            <span class="category_name">Jackets</span>
+                                            <span class="category_name">Áo Khoác</span>
                                         </a>
                                     </li>
                                     <li class="category_item">
                                         <a href="https://shopkeeper.wp-theme.design/product-category/hoodies/"
                                            class="category_item_link">
-                                            <span class="category_name">Hoodies</span>
+                                            <span class="category_name">Áo Hoodies</span>
                                         </a>
                                     </li>
                                     <li class="category_item">
                                         <a href="https://shopkeeper.wp-theme.design/product-category/trousers/"
                                            class="category_item_link">
-                                            <span class="category_name">Trousers</span>
+                                            <span class="category_name">Quần</span>
                                         </a>
                                     </li>
                                     <li class="category_item">
                                         <a href="https://shopkeeper.wp-theme.design/product-category/accessories/"
                                            class="category_item_link">
-                                            <span class="category_name">Accessories</span>
+                                            <span class="category_name">Phụ Kiện</span>
                                         </a>
                                     </li>
                                     <li class="category_item">
                                         <a href="https://shopkeeper.wp-theme.design/product-category/shoes/"
                                            class="category_item_link">
-                                            <span class="category_name">Shoes</span>
+                                            <span class="category_name">Giầy</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -74,12 +74,9 @@
                                                      aria-expanded="false" aria-controls="offCanvasLeft1">
 										<span class="filters-text">
 											<i class="spk-icon spk-icon-menu-filters"></i>
-											Filter										</span>
+											Filter
+                                        </span>
                                                 </div>
-                                                <nav class="woocommerce-breadcrumb"><a
-                                                        href="https://shopkeeper.wp-theme.design">Home</a> <span
-                                                        class="breadcrump_sep">/</span> The Shop
-                                                </nav>
                                             </div>
                                         </div>
                                         <div class="large-12 mobile-columns-2 ">

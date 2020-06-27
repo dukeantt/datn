@@ -16,7 +16,7 @@ class ProductTableSeeder extends Seeder
         \Illuminate\Support\Facades\DB::table('product')->insert([
             [
                 'name' => 'Oversized Nylon Sweatshirt',
-                'images' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1584332733/gold-standard-whey-5lbs-chinh-hang_gr77b6.png',
+                'images' => 'https://res.cloudinary.com/fashionvietnam/image/upload/v1593262447/5983760398347411_01-350x435_mjy3pv.jpg',
                 'price' => 550000,
                 'category_id' => '1',
                 'type_id' => '1',
@@ -27,7 +27,7 @@ class ProductTableSeeder extends Seeder
             ],
             [
                 'name' => 'Rag & Bone Beck Coat',
-                'images' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1584332733/gold-standard-whey-5lbs-chinh-hang_gr77b6.png',
+                'images' => 'https://res.cloudinary.com/fashionvietnam/image/upload/v1593262447/Beck-Coat-01-350x435_xosge9.jpg',
                 'price' => 400000,
                 'category_id' => '1',
                 'type_id' => '1',
@@ -38,7 +38,7 @@ class ProductTableSeeder extends Seeder
             ],
             [
                 'name' => 'Oversize Drawstring Sweatshirt',
-                'images' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1584332733/gold-standard-whey-5lbs-chinh-hang_gr77b6.png',
+                'images' => 'https://res.cloudinary.com/fashionvietnam/image/upload/v1593262447/9596322500_2_1_8_1-350x435_fgoejq.jpg',
                 'price' => 300000,
                 'category_id' => '1',
                 'type_id' => '1',
@@ -49,7 +49,7 @@ class ProductTableSeeder extends Seeder
             ],
             [
                 'name' => 'Folk Striped Slub Cotton-Jersey T-Shirt',
-                'images' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1584332733/gold-standard-whey-5lbs-chinh-hang_gr77b6.png',
+                'images' => 'https://res.cloudinary.com/fashionvietnam/image/upload/v1593262447/4146401443863639_01-350x435_ypz3qm.jpg',
                 'price' => 300000,
                 'category_id' => '1',
                 'type_id' => '1',
@@ -60,7 +60,7 @@ class ProductTableSeeder extends Seeder
             ],
             [
                 'name' => 'Faux Shearling Jacket With Contrast Detail',
-                'images' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1584332733/gold-standard-whey-5lbs-chinh-hang_gr77b6.png',
+                'images' => 'https://res.cloudinary.com/fashionvietnam/image/upload/v1593262447/1569587715268-350x435_ozfmid.jpg',
                 'price' => 550000,
                 'category_id' => '1',
                 'type_id' => '1',
@@ -71,7 +71,7 @@ class ProductTableSeeder extends Seeder
             ],
             [
                 'name' => 'Dyed Shell PrimaLoft Hooded Field Jacket',
-                'images' => 'https://res.cloudinary.com/dzbi63fko/image/upload/v1584332733/gold-standard-whey-5lbs-chinh-hang_gr77b6.png',
+                'images' => 'https://res.cloudinary.com/fashionvietnam/image/upload/v1593262448/stone-island-jacket-a_jv4scc.jpg',
                 'price' => 600000,
                 'category_id' => '1',
                 'type_id' => '1',

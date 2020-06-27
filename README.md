@@ -18,6 +18,7 @@
 	- create a new DB with name "datn"
 4. Go to the Folder application using cd
    On your cmd or Terminal:
+```
 	Run 'composer install'
 	create .env file 
  	Run 'php artisan key:generate'
@@ -27,6 +28,7 @@
 	Run 'composer require snowfire/beautymail dev-master'
 	Run 'php artisan vendor:publish --provider="Snowfire\Beautymail\BeautymailServiceProvider"'
  	Run 'php artisan serve'
+```
 5. Open Web Browser
 	localhost:8000 (Home Page)
 	localhost:8000/admin 
@@ -73,4 +75,7 @@ CLOUDINARY_API_SECRET=Gdtkuq1sn_GiLx9CHRRJizWc9Nk
 CLOUDINARY_CLOUD_NAME=dzbi63fko
 ```
 
-	
+
+ducanh	
+$Abcd1234
+fashionvietnam

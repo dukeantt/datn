@@ -84,7 +84,7 @@ class UserProductController
     public function show($id)
     {
         $obj = Product::find($id);
-        $obj_category = Category::where('status', 1)->get();
+        $obj_category = Category::where('id', $obj->category_id)->get();
         $list_obj = Product::all()
             ->where('id', '!=', $obj->id)
             ->where('category_id', '=', $obj->category_id);
