@@ -70,11 +70,36 @@
                 </div>
 
                 {{--Profile Header--}}
+                <style>
+                    .info-row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                    }
+                    .info-column {
+                        float: left;
+                        width: 50%;
+                        padding: 10px;
+                    }
+                </style>
                 <div class="col-md-5 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
-                            <p class="card-title font-weight-light text-primary">Điểm tích luỹ: <span class="header-cart-item-txt text-danger font-weight-bold ">{{\Illuminate\Support\Facades\Auth::guard('customer')->user()->point}}</span> <i class ="fa fa-usd text-danger" aria-hidden="true"></i></p>
-                            <span class="card-description">( 1$ ~ 1.000 VND ) </span>
+                            <div class="info-row">
+                                <div class="info-column">
+                                    <p class="card-title font-weight-light text-primary">Điểm tích luỹ:
+                                        <span class="header-cart-item-txt text-danger font-weight-bold ">{{\Illuminate\Support\Facades\Auth::guard('customer')->user()->point}}</span>
+                                        <i class ="fa fa-usd text-danger" aria-hidden="true"></i>
+                                    </p>
+                                    <span class="card-description">( 1$ ~ 1.000 VND ) </span>
+                                </div>
+                                <div class="info-column">
+                                    <a href="{{url("/user/logout")}}">
+                                        Log out
+                                    </a>
+                                </div>
+                            </div>
+
                             <hr>
                             <p class="card-description">User Information</p>
                             <ul class="about">

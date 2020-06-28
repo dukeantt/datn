@@ -1,5 +1,6 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <link rel="stylesheet" type="text/css" href="{{asset('css/loginForm_css/user_login.css')}}">
+<link rel="icon" type="image/png" href="{{asset('img/1644871.svg')}}"/>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script src="{{asset('js/user_login.js')}}"></script>

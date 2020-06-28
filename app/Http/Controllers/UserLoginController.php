@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpKernel\Profiler\Profile;
+use Illuminate\Support\Facades\Session;
 
 class UserLoginController extends Controller
 {
@@ -42,6 +43,7 @@ class UserLoginController extends Controller
     public function logout()
     {
         Auth::logout();
+        Session::flush();
         return redirect('/');
     }
 
