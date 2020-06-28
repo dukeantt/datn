@@ -4,15 +4,17 @@
     <div class="container-fluid m-b-30" style="width: 70%">
         <div class="row row-eq-height">
             <div class="col-8">
-                <div class="m-t-50 align-items-center"><img class="center-block" src="{{asset('img/1644871.svg')}}" style="max-width: 30%"></div>
+                <div class="m-t-50 align-items-center"><img class="center-block" src="{{asset('img/1644871.svg')}}" style="max-width: 22%;padding-top: 30px;"></div>
                 <div class="checkout-wrap">
                     <ul class="checkout-bar">
-                        <li class="visited first">
+                        <li class="visited first" style=" padding-top: 25px;z-index: 0;">
                             <a href="#">Giỏ hàng</a>
                         </li>
-                        <li class="previos visited"><a href="/checkout">Thông tin giao hàng</a></li>
-                        <li class="active"><a href="/payment">Thanh toán</a></li>
-                        <li class="">Hoàn thành</li>
+                        <li class="previos visited" style="z-index: 0;">
+                            <a href="/checkout">Thông tin giao hàng</a></li>
+                        <li class="active" style=" padding-top: 25px;z-index: 0;">
+                            <a href="/payment">Thanh toán</a></li>
+                        <li class="" style=" padding-top: 25px;z-index: 0;">Hoàn thành</li>
                     </ul>
                 </div>
                 <div class="alert alert-danger view-alert m-t-180 hidden">
@@ -43,7 +45,7 @@
                         <div class="change">Sửa</div>
                     </div>
                 </div>
-                <h3 class="m-t-30 m-b-30 m-l-128 payment-method">Phương thức thanh toán</h3>
+                <h3 class="m-t-30 m-b-30 m-l-128 payment-method" style="margin-left: 70px;">Phương thức thanh toán</h3>
                 <div class="content-box payment-method" style="text-align: center">
 {{--                    <div class="trans-0-4  m-b-1" id="paypal-button">--}}
 {{--                    </div>--}}

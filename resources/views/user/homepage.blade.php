@@ -9,7 +9,7 @@
             height: 700px;
             background-image: url({{asset("img/vietnamfashion.jpg")}});
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: 1349px 607px;
         }
     </style>
 @endsection

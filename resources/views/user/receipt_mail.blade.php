@@ -118,7 +118,7 @@
 
 <body>
 <div class="invoice-box" style="margin-top: 180px; margin-bottom: 30px">
-    <img src="https://i.imgur.com/21NRuWS.png" style="max-width: 30%">
+    <img src="https://i.imgur.com/2orPkFo.png" style="max-width: 30%">
     <hr>
     <table cellpadding="0" cellspacing="0">
         <tr class="top">

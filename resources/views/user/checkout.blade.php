@@ -4,21 +4,22 @@
    <div class="container-fluid m-b-30" style="width: 70%">
    <div class="row row-eq-height">
        <div class="col-8">
-           <div class="m-t-50 align-items-center"><img class="center-block" src="{{asset('img/1644871.svg')}}" style="max-width: 30%"></div>
+           <div class="m-t-50 align-items-center"><img class="center-block" src="{{asset('img/1644871.svg')}}" style="max-width: 22%;padding-top: 30px;"></div>
            <div class="checkout-wrap">
                <ul class="checkout-bar">
-                   <li class="visited first">
+                   <li class="visited first" style=" padding-top: 25px;z-index: 0;">
                        <a href="/view-cart">Giỏ hàng</a>
                    </li>
-                   <li class="active"><a href="/checkout">Thông tin giao hàng</a></li>
-                   <li class="next">Thanh toán</li>
-                   <li class="">Hoàn thành</li>
+                   <li class="active" style="z-index: 0;">
+                       <a href="/checkout">Thông tin giao hàng</a></li>
+                   <li class="next" style=" padding-top: 25px;">Thanh toán</li>
+                   <li class="" style=" padding-top: 25px;">Hoàn thành</li>
                </ul>
            </div>
            <div class="alert alert-danger view-alert m-t-180 hidden">
            </div>
            <div class="m-t-180 m-l-30 order-form">
-               <form name="order-form">
+               <form name="order-form" style="padding-top: 54px;">
                    <h3 class="m-b-30">Thông tin liên hệ</h3>
                    <div class="form-group">
                        <textarea class="form-control" placeholder="Email" name="email" rows="2"></textarea>

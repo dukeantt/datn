@@ -1,7 +1,7 @@
 @extends('layouts.user-master-layout',['currentPage' => 'Products'])
 @section('page-title','Product')
 @section('content')
-    <div class="m-t-50 align-items-center"><img class="center-block" src="{{asset('img/1644871.svg')}}" style="max-width: 30%"></div>
+    <div class="m-t-50 align-items-center"><img class="center-block" src="{{asset('img/1644871.svg')}}" style="padding-top: 26px;max-width: 12%;"></div>
     <div class="checkout-wrap">
         <ul class="checkout-bar">
             <li class="visited first">
@@ -13,7 +13,6 @@
         </ul>
     </div>
 <div class="invoice-box" style="margin-top: 180px; margin-bottom: 30px">
-    <img src="{{asset('img/1644871.svg')}}" style="max-width: 30%">
     <hr>
     <table cellpadding="0" cellspacing="0">
         <tr class="top">

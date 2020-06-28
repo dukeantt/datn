@@ -1,7 +1,7 @@
 @extends('layouts.user-master-layout',['currentPage' => 'cart'])
 @section('page-title','Giỏ hàng')
 @section('content')
-    <div class="m-t-50 align-items-center"><img class="center-block" src="{{asset('img/1644871.svg')}}" style="max-width: 30%"></div>
+    <div class="m-t-50 align-items-center"><img class="center-block" src="{{asset('img/1644871.svg')}}" style="padding-top: 25px;max-width: 9%;"></div>
     <div class="checkout-wrap">
         <ul class="checkout-bar">
             <li class="active">
