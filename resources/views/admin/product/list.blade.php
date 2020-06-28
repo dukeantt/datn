@@ -34,7 +34,6 @@
                     </td>
                     <td style="text-align: center">{{$item -> name}}</td>
                     <td style="text-align: center">{{$item -> category -> name}}</td>
-{{--                    <td style="text-align: center">{{$item -> brand -> name}}</td>--}}
                     <td style="text-align: center">{{number_format($item -> price,0)}} VND</td>
                     <td>{{$item -> description}}</td>
                     <td style="text-align: center">
@@ -90,11 +89,6 @@
                         </div>
                         <div class="form-group">
                             <label>Nhãn hàng</label>
-                            <select class="form-control" name="brand_id">
-                                @foreach($obj_brand as $item)
-                                    <option value="{{$item->id}}">{{$item -> name}}</option>
-                                @endforeach
-                            </select>
                         </div>
                         <div class="form-group">
                             <label>Mô tả</label>

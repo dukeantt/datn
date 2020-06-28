@@ -2,6 +2,7 @@
 @section('page-title', 'Trang chủ')
 @section('active-dashboard','active')
 @section('content')
+
     <div class="row" style="margin-bottom: 30px;">
         <div class="col-md-3">
             <label>Thời gian của biểu đồ:</label>

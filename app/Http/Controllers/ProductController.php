@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Brand;
 use App\Category;
 use App\Http\Requests\StoreProduct;
 use App\Order;
@@ -27,11 +26,9 @@ class ProductController extends Controller
         if(Auth::check()){
             $obj = Product::all()->where('status','=',1);
             $obj_category = Category::all();
-            $obj_brand = Brand::all();
             return view('admin.product.list')
                 -> with('obj',$obj)
-                -> with('obj_category',$obj_category)
-                -> with('obj_brand',$obj_brand);
+                -> with('obj_category',$obj_category);
         }
         else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
     }
@@ -45,10 +42,8 @@ class ProductController extends Controller
     {
         if(Auth::check()){
             $obj_category = Category::all();
-            $obj_brand = Brand::all();
             return view('admin.product.create_form')
-                ->with('obj_category',$obj_category)
-                ->with('obj_brand',$obj_brand);
+                ->with('obj_category',$obj_category);
         }
         else return redirect('/admin/login')->with('message','Bạn phải đăng nhập để sử dụng quyền admin');
 
@@ -125,7 +120,7 @@ class ProductController extends Controller
             $obj -> description = Input::get('description');
             $obj -> category_id = Input::get('category_id');
             $obj -> price = Input::get('price');
-            $obj -> brand_id = Input::get('brand_id');
+//            $obj -> brand_id = Input::get('brand_id');
             $images = $request -> file('images');
             if($request -> hasFile('images')){
                 foreach ($images as $image) {

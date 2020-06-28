@@ -2,6 +2,7 @@
 <head>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="{{asset('/css/loginForm_css/login.css')}}" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{{asset('img/1644871.svg')}}"/>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
