@@ -32,7 +32,7 @@
                                 <div class="form-group">
                                     <label class="control-label">Email người gửi</label>
                                     <input class="form-control" type="text" name="sender"
-                                           placeholder="VD: fashionvietnam@gmail.com" value="fashionvietnam@gmail.com">
+                                           placeholder="VD: fashionvietnam1223@gmail.com" value="fashionvietnam1223@gmail.com">
                                 </div>
                             </div>
                         </div>

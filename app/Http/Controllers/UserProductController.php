@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 
 use App\Category;
-use App\CategoryNews;
 use App\Order;
 use App\OrderDetail;
 use App\Product;
@@ -17,7 +16,6 @@ class UserProductController
     public function index()
     {
         $obj_category = Category::where('status', 1)->get();
-        $obj_categoryNews = CategoryNews::all();
         $chosen_category = 0;
         $obj = Product::where('status', 1)
             ->orderBy('created_at', 'desc')
@@ -35,8 +33,7 @@ class UserProductController
         return view('user.products')
             ->with('obj_category', $obj_category)
             ->with('obj', $obj)
-            ->with('chosen_category', $chosen_category)
-            ->with('obj_categoryNews', $obj_categoryNews);
+            ->with('chosen_category', $chosen_category);
     }
 
     public function search()

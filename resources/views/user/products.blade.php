@@ -21,36 +21,14 @@
                                     </div>
                                 </div>
                                 <ul class="list_shop_categories list-centered">
-                                    <li class="category_item">
-                                        <a href="https://shopkeeper.wp-theme.design/product-category/jackets/"
-                                           class="category_item_link">
-                                            <span class="category_name">Áo Khoác</span>
-                                        </a>
-                                    </li>
-                                    <li class="category_item">
-                                        <a href="https://shopkeeper.wp-theme.design/product-category/hoodies/"
-                                           class="category_item_link">
-                                            <span class="category_name">Áo Hoodies</span>
-                                        </a>
-                                    </li>
-                                    <li class="category_item">
-                                        <a href="https://shopkeeper.wp-theme.design/product-category/trousers/"
-                                           class="category_item_link">
-                                            <span class="category_name">Quần</span>
-                                        </a>
-                                    </li>
-                                    <li class="category_item">
-                                        <a href="https://shopkeeper.wp-theme.design/product-category/accessories/"
-                                           class="category_item_link">
-                                            <span class="category_name">Phụ Kiện</span>
-                                        </a>
-                                    </li>
-                                    <li class="category_item">
-                                        <a href="https://shopkeeper.wp-theme.design/product-category/shoes/"
-                                           class="category_item_link">
-                                            <span class="category_name">Giầy</span>
-                                        </a>
-                                    </li>
+                                    @foreach($obj_category as $category)
+                                        <li class="category_item">
+                                            <a href="{{url('/product'.'?categoryId='.$category->id)}}"
+                                               class="category_item_link">
+                                                <span class="category_name">{{$category->name}}</span>
+                                            </a>
+                                        </li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>
@@ -126,23 +104,7 @@
 
                                         <div class="woocommerce-after-shop-loop-wrapper">
                                             <div class="getbowtied_ajax_load_button finished" style="display: block;"><a
-                                                    getbowtied_ajax_load_more_processing="0" class="disabled">No more
-                                                    items available.</a></div>
-                                            <nav class="woocommerce-pagination" style="display: none;">
-                                                <ul class="page-numbers">
-                                                    <li><a class="prev page-numbers"
-                                                           href="https://shopkeeper.wp-theme.design/shop/page/2/">←</a>
-                                                    </li>
-                                                    <li><a class="page-numbers"
-                                                           href="https://shopkeeper.wp-theme.design/shop/page/1/">1</a>
-                                                    </li>
-                                                    <li><a class="page-numbers"
-                                                           href="https://shopkeeper.wp-theme.design/shop/page/2/">2</a>
-                                                    </li>
-                                                    <li><span aria-current="page" class="page-numbers current">3</span>
-                                                    </li>
-                                                </ul>
-                                            </nav>
+                                                    getbowtied_ajax_load_more_processing="0" class="disabled"></a></div>
                                         </div>
                                     </div>
                                 </div>

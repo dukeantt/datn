@@ -19,7 +19,7 @@
                     <i class="fas fa-home"> Fashion Vietnam</i><br>
                     <i class="fas fa-inbox"> Inbox : http://m.me/fashionvietnam.vn</i><br>
                     <i class="fas fa-globe"> Website : https://fashionvietnam.vn</i><br>
-                    <i class="fas fa-mail-reply-all"> Email: fashionvietnam@gmail.com</i><br>
+                    <i class="fas fa-mail-reply-all"> Email: fashionvietnam1223@gmail.com</i><br>
                 </div>
                 <hr>
                 <div class="p-r-20 p-r-0-lg">

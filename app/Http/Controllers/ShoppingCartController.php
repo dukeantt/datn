@@ -4,14 +4,12 @@ namespace App\Http\Controllers;
 
 use App\CartItem;
 use App\Category;
-use App\CategoryNews;
 use App\Customer;
 use App\Http\Requests\StoreCustomer;
 use App\Order;
 use App\OrderDetail;
 use App\Product;
 use App\ShoppingCart;
-use App\subcribed_user;
 use App\Subscribed;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -66,14 +64,12 @@ class ShoppingCartController extends Controller
     public function showCart()
     {
         $obj_category = Category::where('status', 1)->get();
-        $obj_categoryNews = CategoryNews::all();
         $shopping_cart = new ShoppingCart();
         if (Session::has('cart')){
             $shopping_cart = Session::get('cart');
         }
         return view('user.cart')
             ->with('obj_category',$obj_category)
-            ->with('obj_categoryNews',$obj_categoryNews)
             ->with('shopping_cart', $shopping_cart);
     }
 
@@ -102,27 +98,23 @@ class ShoppingCartController extends Controller
 
     public function checkout(){
         $obj_category = Category::where('status', 1)->get();
-        $obj_categoryNews = CategoryNews::all();
         $shopping_cart = new ShoppingCart();
         if (Session::has('cart')){
             $shopping_cart = Session::get('cart');
         }
         return view('user.checkout')
             ->with('obj_category',$obj_category)
-            ->with('obj_categoryNews',$obj_categoryNews)
             ->with('shopping_cart', $shopping_cart);
     }
 
     public function payment(){
         $obj_category = Category::where('status', 1)->get();
-        $obj_categoryNews = CategoryNews::all();
         $shopping_cart = new ShoppingCart();
         if (Session::has('cart')){
             $shopping_cart = Session::get('cart');
         }
         return view('user.payment')
             ->with('obj_category',$obj_category)
-            ->with('obj_categoryNews',$obj_categoryNews)
             ->with('shopping_cart', $shopping_cart);
     }
 
@@ -130,7 +122,6 @@ class ShoppingCartController extends Controller
     {
         $request -> validated();
         $obj_category = Category::where('status', 1)->get();
-        $obj_categoryNews = CategoryNews::all();
         if (Session::has('cart')) {
             try {
                 DB::beginTransaction();
@@ -184,7 +175,7 @@ class ShoppingCartController extends Controller
                     $ship_name = Input::get('ship_name');
                     $mail = Input::get('email');
                     $message
-                        ->from('fashionvietnam@gmail.com','Fashion Vietnam')
+                        ->from('fashionvietnam1223@gmail.com','Fashion Vietnam')
                         ->to($mail, $ship_name)
                         ->subject('Hóa đơn đơn hàng #' . $order_id -> id);
                 });
@@ -193,7 +184,6 @@ class ShoppingCartController extends Controller
                 Session::remove('cart');
                 return view('user.receipt')
                     ->with('obj_category',$obj_category)
-                    ->with('obj_categoryNews',$obj_categoryNews)
                     ->with('order', $order)
                     ->with('order_details', $order_details);
             } catch (\Exception $exception) {
@@ -224,14 +214,12 @@ class ShoppingCartController extends Controller
     public function receipt()
     {
         $obj_category = Category::where('status', 1)->get();
-        $obj_categoryNews = CategoryNews::all();
         $shopping_cart = new ShoppingCart();
         if (Session::has('cart')){
             $shopping_cart = Session::get('cart');
         }
         return view('user.receipt3')
             ->with('obj_category',$obj_category)
-            ->with('obj_categoryNews',$obj_categoryNews)
             ->with('shopping_cart', $shopping_cart);
     }
 }

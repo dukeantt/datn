@@ -14,10 +14,6 @@ class News extends Model
     //
     protected $table = 'news';
 
-    public function category_news()
-    {
-        return $this->belongsTo('App\CategoryNews','category_news_id');
-    }
     public function comment(){
         return $this->hasMany('App\Comment','id_news');
     }

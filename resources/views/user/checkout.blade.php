@@ -4,7 +4,7 @@
    <div class="container-fluid m-b-30" style="width: 70%">
    <div class="row row-eq-height">
        <div class="col-8">
-           <div class="m-t-50 align-items-center"><img class="center-block" src="{{asset('img/logoFashionVietnam.jpg')}}" style="max-width: 30%"></div>
+           <div class="m-t-50 align-items-center"><img class="center-block" src="{{asset('img/1644871.svg')}}" style="max-width: 30%"></div>
            <div class="checkout-wrap">
                <ul class="checkout-bar">
                    <li class="visited first">

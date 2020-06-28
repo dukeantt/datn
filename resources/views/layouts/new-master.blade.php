@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8"/>
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="{{asset('img/GS_logo.jpg')}}">
+    <link rel="icon" type="image/png" href="{{asset('img/1644871.jpg')}}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('page-title')</title>

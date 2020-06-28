@@ -8,7 +8,6 @@ use Symfony\Component\HttpKernel\Profiler\Profile;
 
 class Customer extends Authenticatable
 {
-    /*public function profile(){
-        return $this->hasOne(Profile::class);
-    }*/
+    protected $table = "user";
+
 }

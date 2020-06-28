@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Account;
 use App\Category;
-use App\CategoryNews;
 use App\Customer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -129,10 +128,8 @@ class UserLoginController extends Controller
     {
         if (Auth::guard('customer')-> check()) {
             $obj_category = Category::where('status',1)->get();
-            $obj_categoryNews = CategoryNews::all();
             return view('user.user_profile')
                 ->with('obj_category', $obj_category)
-                ->with('obj_categoryNews', $obj_categoryNews)
                 ->with('logged_in', true);
         } else return redirect('/user/login')->with('message', 'Bạn phải đăng nhập để có thể vào profile');
     }

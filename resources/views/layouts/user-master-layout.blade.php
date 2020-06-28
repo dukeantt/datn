@@ -75,11 +75,6 @@
     <link media="only screen and (max-width: 768px)"
           href="https://shopkeeper.wp-theme.design/wp-content/cache/autoptimize/css/autoptimize_dcb2de333eec7ab4ae31385ed8d6a393.css"
           rel="stylesheet">
-    <title>The Shop » Shopkeeper</title>
-    <script type="text/javascript">console.log('PixelYourSite PRO version 7.5.8');</script>
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link rel="dns-prefetch" href="//ajax.googleapis.com">
     <style id="woocommerce-inline-inline-css" type="text/css">
         .woocommerce form .form-row .required {
             visibility: visible;
@@ -838,9 +833,6 @@
             margin: 0 !important;
         }</style>
     <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
-    <link rel="icon" href="https://shopkeeper.wp-theme.design/wp-content/uploads/shopkeeper-logo-100x100.png"
-          sizes="32x32">
-    <link rel="icon" href="https://shopkeeper.wp-theme.design/wp-content/uploads/shopkeeper-logo.png" sizes="192x192">
     <style type="text/css" id="wp-custom-css">
         .vc-box-shadow {
             -moz-box-shadow: -2px 2px 81px -27px rgba(0, 0, 0, 0.29);
@@ -996,7 +988,7 @@
                                 </li>
                                 <li class="my_account_icon">
                                     <a class="tools_button"
-                                       href="user/login/">
+                                       href="{{url("userprofile/")}}">
                                     <span class="tools_button_icon">
                                         <i class="spk-icon spk-icon-user-account"></i>
                                     </span>

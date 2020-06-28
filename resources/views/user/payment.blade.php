@@ -4,7 +4,7 @@
     <div class="container-fluid m-b-30" style="width: 70%">
         <div class="row row-eq-height">
             <div class="col-8">
-                <div class="m-t-50 align-items-center"><img class="center-block" src="{{asset('img/logoFashionVietnam.jpg')}}" style="max-width: 30%"></div>
+                <div class="m-t-50 align-items-center"><img class="center-block" src="{{asset('img/1644871.svg')}}" style="max-width: 30%"></div>
                 <div class="checkout-wrap">
                     <ul class="checkout-bar">
                         <li class="visited first">
@@ -45,8 +45,8 @@
                 </div>
                 <h3 class="m-t-30 m-b-30 m-l-128 payment-method">Phương thức thanh toán</h3>
                 <div class="content-box payment-method" style="text-align: center">
-                    <div class="trans-0-4  m-b-1" id="paypal-button">
-                    </div>
+{{--                    <div class="trans-0-4  m-b-1" id="paypal-button">--}}
+{{--                    </div>--}}
                     <div class="size15 trans-0-4 m-b-10 m-t-30">
                         <!-- Button -->
                             <button type="button" class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4 cod">
@@ -85,7 +85,7 @@
                     </form>
                 </div>
             </div>
-            <div class="col-4" style="background-color: #F8F8F8;">
+            <div class="col-4" style="margin-top: 83px;background-color: #F8F8F8;">
                 <table class="m-t-30 affix">
                     @foreach($shopping_cart->items as $item)
                         <tr class="table-row" id="item-{{$item->product->id}}">

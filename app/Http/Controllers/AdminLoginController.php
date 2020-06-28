@@ -18,7 +18,6 @@ class AdminLoginController extends Controller
 
     public function postLogin(Request $request)
     {
-//        return dd($request);
         $request->validate([
             'username' => 'required|min:6|max:20',
             'password' => 'required|min:6|max:20'
@@ -30,7 +29,8 @@ class AdminLoginController extends Controller
             'password.min' => 'Mật khẩu từ 6-20 ký tự',
             'password.max' => 'Mật khẩu từ 6-20 ký tự'
         ]);
-
+        echo($request->username);
+        echo($request->password);
         if (Auth::attempt(['username' => $request->username, 'password' => $request->password])) {
             return redirect('/admin');
         } else {

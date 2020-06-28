@@ -21,7 +21,6 @@
                 @endif
                     @if(session()->has('message'))
                         <div class="alert alert-success hidden">
-                            {{--{{ session()->get('message') }}--}}
                         </div>
                     @endif
                 <form action="/admin/product" method="post" enctype="multipart/form-data">
@@ -39,14 +38,6 @@
                         <label>Danh mục</label>
                         <select class="form-control" name="categoryId">
                             @foreach($obj_category as $item)
-                                <option value="{{$item -> id}}">{{$item -> name}}</option>
-                            @endforeach
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Brand</label>
-                        <select class="form-control" name="brand_id">
-                            @foreach($obj_brand as $item)
                                 <option value="{{$item -> id}}">{{$item -> name}}</option>
                             @endforeach
                         </select>

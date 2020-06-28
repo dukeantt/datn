@@ -40,19 +40,15 @@
                                                                     <figure class="woocommerce-product-gallery__wrapper"
                                                                             style="width: 800%; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
                                                                         <div
-                                                                            data-thumb="https://shopkeeper.wp-theme.design/wp-content/uploads/Beck-Coat-01-150x150.jpg"
-                                                                            data-thumb-alt=""
                                                                             class="woocommerce-product-gallery__image flex-active-slide"
                                                                             id="product-gallery"
                                                                             style="width: 411px; float: left; display: block; position: relative; overflow: hidden;">
                                                                             <img
                                                                                 role="presentation" alt=""
-                                                                                src="https://shopkeeper.wp-theme.design/wp-content/uploads/Beck-Coat-01.jpg"
                                                                                 class="zoomImg"
                                                                                 style="position: absolute; top: -215.15px; left: -567.691px; opacity: 0; width: 1049px; height: 1300px; border: none; max-width: none; max-height: none;">
                                                                         </div>
                                                                         <div
-                                                                            data-thumb="https://shopkeeper.wp-theme.design/wp-content/uploads/Beck-Coat-04-150x150.jpg"
                                                                             data-thumb-alt=""
                                                                             class="woocommerce-product-gallery__image"
                                                                             id="product-gallery"
@@ -101,12 +97,9 @@
                                                     <div class="large-4 xlarge-5 xxlarge-5 large-push-0 columns">
                                                         <div class="product_infos">
                                                             <div class="product_summary_top">
-                                                                <nav class="woocommerce-breadcrumb"><a
-                                                                        href="https://shopkeeper.wp-theme.design">Home</a>
-                                                                    <span class="breadcrump_sep">/</span> <a
-                                                                        href="https://shopkeeper.wp-theme.design/shop/">
-                                                                        Shop</a> <span class="breadcrump_sep">/</span>
-                                                                    <a href="https://shopkeeper.wp-theme.design/product-category/hoodies/">{{$obj_category[0]->name}}</a>
+                                                                <nav class="woocommerce-breadcrumb"><a>Trang chủ</a>
+                                                                    <span class="breadcrump_sep">/</span> <a>Cửa hàng</a> <span class="breadcrump_sep">/</span>
+                                                                    <a>{{$obj_category[0]->name}}</a>
                                                                     <span class="breadcrump_sep">/</span>{{$obj->name}}
                                                                 </nav>
                                                                 <div class="woocommerce-product-rating">
@@ -182,7 +175,7 @@
                                                                 <span class="sku_wrapper">SKU: <span
                                                                         class="sku">N/A</span></span>
                                                                 <span class="posted_in">Categories: <a
-                                                                        href="https://shopkeeper.wp-theme.design/product-category/hoodies/"
+                                                                        href=""
                                                                         rel="tag">{{$obj_category[0]->name}}</a></span>
                                                             </div>
                                                         </div>
@@ -222,7 +215,7 @@
                                                                 @endif
                                                                 <li class="product type-product post-5110 status-publish {{$class}} instock product_cat-jackets product_cat-hoodies product_cat-trousers has-post-thumbnail shipping-taxable purchasable product-type-variable has-default-attributes animate">
                                                                     <div class="product_thumbnail_wrapper ">
-                                                                        <a href="https://shopkeeper.wp-theme.design/shop/hoodies/oversize-drawstring-sweatshirt/"
+                                                                        <a href=""
                                                                            class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
                                                                             <div
                                                                                 class="product_thumbnail with_second_image second_image_loaded"
@@ -233,7 +226,6 @@
                                                                                      src="https://shopkeeper.wp-theme.design/wp-content/uploads/9596322500_2_1_8_1-350x435.jpg"
                                                                                      class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
                                                                                      alt=""
-                                                                                     srcset="https://shopkeeper.wp-theme.design/wp-content/uploads/9596322500_2_1_8_1-350x435.jpg 350w, https://shopkeeper.wp-theme.design/wp-content/uploads/9596322500_2_1_8_1-920x1140.jpg 920w, https://shopkeeper.wp-theme.design/wp-content/uploads/9596322500_2_1_8_1-242x300.jpg 242w, https://shopkeeper.wp-theme.design/wp-content/uploads/9596322500_2_1_8_1.jpg 1049w"
                                                                                      sizes="(max-width: 350px) 100vw, 350px"
                                                                                      style="opacity: 1;"></div>
                                                                         </a>

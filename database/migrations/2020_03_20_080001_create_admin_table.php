@@ -24,6 +24,7 @@ class CreateAdminTable extends Migration
             $table->integer('role')->unsigned();
             $table->integer('status')->default(1);
             $table->timestamps();
+            $table->rememberToken();
             $table->foreign('role')->references('id')->on('role');
         });
     }

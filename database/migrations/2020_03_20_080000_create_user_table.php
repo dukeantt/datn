@@ -18,12 +18,14 @@ class CreateUserTable extends Migration
             $table->string('username');
             $table->string('password');
             $table->string('full_name');
+            $table->string('avatar')->nullable();
             $table->integer('gender');
             $table->string('email')->unique();
             $table->string('DOB');
             $table->integer('role')->unsigned();
             $table->integer('status')->default(1);
             $table->timestamps();
+            $table->rememberToken();
             $table->foreign('role')->references('id')->on('role');
 
         });

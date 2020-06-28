@@ -23,7 +23,9 @@ class UserTableSeeder extends Seeder
                 'email' => 'ngocnam@gmail.com',
                 'DOB' => '1997-25-07',
                 'role' => 2,
-                'status' => 1
+                'status' => 1,
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 1, 00, 00, 00),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 1, 00, 00, 00)
             ],
             [
                 'username' => 'phuc',
@@ -33,7 +35,9 @@ class UserTableSeeder extends Seeder
                 'email' => 'phuc@gmail.com',
                 'DOB' => '1999-05-05',
                 'role' => 2,
-                'status' => 1
+                'status' => 1,
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 1, 00, 00, 00),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 1, 00, 00, 00)
             ],
             [
                 'username' => 'nam',
@@ -43,7 +47,9 @@ class UserTableSeeder extends Seeder
                 'email' => 'nam@gmail.com',
                 'DOB' => '1997-03-15',
                 'role' => 2,
-                'status' => 1
+                'status' => 1,
+                'created_at'=>\Carbon\Carbon::create(2020, 3, 1, 00, 00, 00),
+                'updated_at'=>\Carbon\Carbon::create(2020, 3, 1, 00, 00, 00)
             ],
         ]);
     }

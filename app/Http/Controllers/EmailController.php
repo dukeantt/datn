@@ -20,7 +20,7 @@ class EmailController extends Controller
         Mail::send('admin.email.send_reicept', $data, function ($message) use ($email) {
             $message->to($email, 'Fashion Vietnam Subscribers')->subject
             ('Quảng cáo sản phảm mới Fashion Vietnam');
-            $message->from('fashionvietnam@gmail.com', 'Fashion Vietnam');
+            $message->from('fashionvietnam1223@gmail.com', 'Fashion Vietnam');
         });
         return response()->json(['msg', 'DONE'], 200);
     }
