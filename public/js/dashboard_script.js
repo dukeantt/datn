@@ -25,19 +25,8 @@ $(document).ready(function () {
         }
     })
 });
-//Lấy số subscriber mới
-$(document).ready(function () {
-    $.ajax({
-        url: '/admin/count-subscribers',
-        method: 'GET',
-        success: function (resp) {
-            $('#count-subscribers').text(resp);
-        },
-        error: function () {
-            swal('Có lỗi xảy ra', 'Không thể lấy dữ liệu từ api', 'error');
-        }
-    })
-});
+
+
 //Lấy tổng doanh thu
 $(document).ready(function () {
     $.ajax({
@@ -47,6 +36,7 @@ $(document).ready(function () {
             $('#revenue').text(numeral(resp[0].revenue).format(0,0) + ' VND');
         },
         error: function () {
+            console.log("loi o tong doanh thu");
             swal('Có lỗi xảy ra', 'Không thể lấy dữ liệu từ api', 'error');
         }
     })
@@ -62,6 +52,7 @@ google.charts.setOnLoadCallback(function () {
             drawChart(resp);
         },
         error: function () {
+            console.log("loi o  doanh thu theo thoi gian");
             swal('Có lỗi xảy ra', 'Không thể lấy dữ liệu từ api', 'error');
         }
     });

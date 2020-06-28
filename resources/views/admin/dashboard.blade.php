@@ -2,7 +2,6 @@
 @section('page-title', 'Trang chủ')
 @section('active-dashboard','active')
 @section('content')
-
     <div class="row" style="margin-bottom: 30px;">
         <div class="col-md-3">
             <label>Thời gian của biểu đồ:</label>
@@ -15,9 +14,9 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-4 col-sm-6">
             <div class="card card-stats">
-                <div class="card-body ">
+                <div class="card-body" style="height: 105px">
                     <div class="row">
                         <div class="col-5">
                             <div class="icon-big text-center icon-warning">
@@ -40,9 +39,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-4 col-sm-6">
             <div class="card card-stats">
-                <div class="card-body ">
+                <div class="card-body">
                     <div class="row">
                         <div class="col-5">
                             <div class="icon-big text-center icon-warning">
@@ -65,9 +64,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-sm-6">
+        <div class="col-lg-4 col-sm-6">
             <div class="card card-stats">
-                <div class="card-body ">
+                <div class="card-body" style="height: 105px">
                     <div class="row">
                         <div class="col-5">
                             <div class="icon-big text-center icon-warning">
@@ -90,29 +89,35 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-sm-6">
-            <div class="card card-stats">
-                <div class="card-body ">
-                    <div class="row">
-                        <div class="col-5">
-                            <div class="icon-big text-center icon-warning">
-                                <i class="nc-icon nc-favourite-28 text-primary"></i>
-                            </div>
-                        </div>
-                        <div class="col-7">
-                            <div class="numbers">
-                                <p class="card-category">Số người đăng kí mới</p>
-                                <h4 class="card-title" id="count-subscribers"></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer ">
-                    <hr>
-                    <div class="stats">
-                        <a href="/admin/subcriber">Vào đây</a> để gửi mail quảng cáo
-                    </div>
-                </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 card">
+            <div class="card-header">
+                <h3>Biểu đồ doanh thu theo thời gian</h3>
+                <p>tính theo đơn vị (vnd)</p>
+            </div>
+            <div class="card-body">
+                <div id="linechart_material"></div>
+            </div>
+        </div>
+
+        <div class="col-md-6 card">
+            <div class="card-header">
+                <h3>Biểu đồ số sản phẩm bán theo danh mục</h3>
+                <p>tính theo đơn vị (đơn hàng)</p>
+            </div>
+            <div class="card-body">
+                <div id="piechart"></div>
+            </div>
+        </div>
+
+        <div class="col-md-12 card">
+            <div class="card-header">
+                <h3>Biểu đồ số sản phẩm bán theo khung giờ</h3>
+                <p>tính theo đơn vị (sản phẩm)</p>
+            </div>
+            <div class="card-body">
+                <div id="columnchart"></div>
             </div>
         </div>
     </div>

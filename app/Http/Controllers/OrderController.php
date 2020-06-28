@@ -52,8 +52,11 @@ class OrderController extends Controller
             if ($obj == null) {
                 return view('404');
             }
-            $obj->delete();
-        } else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
+//            $obj->delete();
+            $obj->status = -1;
+            $obj->save();
+        }
+        else return redirect('/admin/login')->with('message', 'Bạn phải đăng nhập để sử dụng quyền admin');
     }
 
 

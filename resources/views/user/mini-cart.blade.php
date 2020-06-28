@@ -23,7 +23,7 @@
                         </div>
                     @endforeach
                 @else
-                    <span>'No product in cart'</span>
+                    <span style="margin-left: 148px;">No product in cart</span>
                 @endif
 
             </ul>
