@@ -78,17 +78,8 @@
                                                                 </div>
 {{--                                                                <ol class="flex-control-nav flex-control-thumbs">--}}
 {{--                                                                    <li><img--}}
-{{--                                                                            src="https://shopkeeper.wp-theme.design/wp-content/uploads/Beck-Coat-01-150x150.jpg"--}}
+{{--                                                                            src=""--}}
 {{--                                                                            class="flex-active" draggable="false"></li>--}}
-{{--                                                                    <li><img--}}
-{{--                                                                            src="https://shopkeeper.wp-theme.design/wp-content/uploads/Beck-Coat-04-150x150.jpg"--}}
-{{--                                                                            draggable="false"></li>--}}
-{{--                                                                    <li><img--}}
-{{--                                                                            src="https://shopkeeper.wp-theme.design/wp-content/uploads/Beck-Coat-03-150x150.jpg"--}}
-{{--                                                                            draggable="false"></li>--}}
-{{--                                                                    <li><img--}}
-{{--                                                                            src="https://shopkeeper.wp-theme.design/wp-content/uploads/Beck-Coat-02-150x150.jpg"--}}
-{{--                                                                            draggable="false"></li>--}}
 {{--                                                                </ol>--}}
                                                             </div>
                                                         </div>
@@ -215,34 +206,21 @@
                                                                 @endif
                                                                 <li class="product type-product post-5110 status-publish {{$class}} instock product_cat-jackets product_cat-hoodies product_cat-trousers has-post-thumbnail shipping-taxable purchasable product-type-variable has-default-attributes animate">
                                                                     <div class="product_thumbnail_wrapper ">
-                                                                        <a href=""
+                                                                        <a href="{{url('/product/'.$productItem->id)}}"
                                                                            class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
                                                                             <div
-                                                                                class="product_thumbnail with_second_image second_image_loaded"
+                                                                                class="product_thumbnail"
                                                                                 style="background-size: cover;">
-                                                                            <span class="product_thumbnail_background"
-                                                                                  style="background-image:url(https://shopkeeper.wp-theme.design/wp-content/uploads/9596322500_2_1_8_6-350x435.jpg)"></span>
+                                                                            <span class="product_thumbnail_background"></span>
                                                                                 <img width="350" height="435"
-                                                                                     src="https://shopkeeper.wp-theme.design/wp-content/uploads/9596322500_2_1_8_1-350x435.jpg"
+                                                                                     src="{{$productItem->images}}"
                                                                                      class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
                                                                                      alt=""
-                                                                                     sizes="(max-width: 350px) 100vw, 350px"
                                                                                      style="opacity: 1;"></div>
                                                                         </a>
-                                                                        <div class="product_thumbnail_icons">
-                                                                            <a href="#" id="product_id_5110"
-                                                                               class="product_quickview_button"
-                                                                               data-product_id="5110"></a>
-                                                                            <div class="icons-separator"></div>
-                                                                            <div
-                                                                                class="yith-wcwl-add-to-wishlist add-to-wishlist-5110  wishlist-fragment on-first-load"
-                                                                                data-fragment-ref="5110"
-                                                                                data-fragment-options="{&quot;base_url&quot;:&quot;https:\/\/shopkeeper.wp-theme.design\/shop\/hoodies\/rag-bone-beck-coat?page&amp;product_cat=hoodies&amp;product=rag-bone-beck-coat&amp;post_type=product&amp;name=rag-bone-beck-coat&quot;,&quot;wishlist_url&quot;:&quot;https:\/\/shopkeeper.wp-theme.design\/wishlist\/&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:5110,&quot;parent_product_id&quot;:5110,&quot;product_type&quot;:&quot;variable&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;You love this!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:false,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
-                                                                            </div>
-                                                                        </div>
                                                                     </div>
                                                                     <h2 class="woocommerce-loop-product__title">
-                                                                        <a href="https://shopkeeper.wp-theme.design/shop/hoodies/oversize-drawstring-sweatshirt/">{{$productItem->name}}</a>
+                                                                        <a href="{{url('/product/'.$productItem->id)}}">{{$productItem->name}}</a>
                                                                     </h2>
                                                                     <div class="star-rating" role="img"
                                                                          aria-label="Rated 4.67 out of 5"><span
@@ -250,7 +228,7 @@
                                                                                 class="rating">4.67</strong> out of 5</span>
                                                                     </div>
                                                                     <div class="product_after_shop_loop">
-                                                                        <div class="product_after_shop_loop_switcher">
+                                                                        <div class="">
                                                                         <span class="price">
                                                                             <span
                                                                                 class="woocommerce-Price-amount amount">
