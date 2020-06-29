@@ -15,15 +15,11 @@ Route::get('/admin/product/{id}/quickEdit','ProductController@quickEdit');
 Route::put('/admin/quickUpdate/product/','ProductController@quickUpdate');
 Route::get('/admin/category/{id}/quickEdit','CategoryController@quickEdit');
 Route::put('/admin/quickUpdate/category/','CategoryController@quickUpdate');
-Route::get('/admin/brand/{id}/quickEdit','BrandController@quickEdit');
-Route::put('/admin/quickUpdate/brand/','BrandController@quickUpdate');
 
 Route::get('/admin/order/change-status', 'OrderController@changeStatus');
 Route::post('/admin/order/change-status', 'OrderController@changeStatus');
 Route::get('/admin/send-mail', 'EmailController@send');
 Route::post('/admin/send-email-2','EmailController@send2');
-Route::get('/admin/send-mail-tab3', 'SubcriberController@getProductChoose');
-Route::get('/admin/subcriber/send-email','SubcriberController@showSendEmailPage');
 
 Route::get('/admin/get-content','EmailController@getContent');
 
@@ -32,8 +28,6 @@ Route::resource('admin/product','ProductController');
 Route::resource('admin/category','CategoryController');
 Route::resource('admin/order','OrderController');
 Route::resource('admin/account','AccountController');
-Route::resource('admin/brand','BrandController');
-Route::resource('admin/subcriber','SubcriberController');
 
 Route::get('admin/accountCustomer','AccountController@indexCustomer');
 Route::post('admin/accountCustomer/lock','AccountController@lockCustomer');

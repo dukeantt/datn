@@ -2,7 +2,7 @@
 @section('page-title','Return&Refunds')
 @section('content')
     <div class="container">
-        <h1>Return & Refunds</h1>
+        <h1 style="padding-top: 72px;">Return & Refunds</h1>
         <div class="wrap-dropdown-content bo6 p-t-15 p-b-14 active-dropdown-content">
             <h5 class="js-toggle-dropdown-content flex-sb-m cs-pointer m-text19 color0-hov trans-0-4">
                 Chính sách trả hàng và Quy trình

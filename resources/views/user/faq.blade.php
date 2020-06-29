@@ -2,7 +2,7 @@
 @section('page-title','FAQs')
 @section('content')
     <div class="container">
-        <h1>FAQs</h1>
+        <h1 style="padding-top: 72px;">FAQs</h1>
         <div class="wrap-dropdown-content bo6 p-t-15 p-b-14 active-dropdown-content">
             <h5 class="js-toggle-dropdown-content flex-sb-m cs-pointer m-text19 color0-hov trans-0-4">
                 Làm thế nào để mua sắm và đặt hàng?
@@ -19,31 +19,15 @@
                         và
                         dễ dàng đặt hàng.</p>
 
-                    <b>Tôi đã quên mật khẩu của mình: tôi phải làm gì?</b>
-
-                    <p>Chỉ cần nhấp vào liên kết 'Quên mật khẩu của bạn?' Trên trang Đăng nhập của chúng tôi và nhập địa
-                        chỉ email của bạn. Sau đó, bạn sẽ nhận được email để đặt lại mật khẩu của mình.</p>
-
-                    <b>Làm cách nào để nhận được cập nhật email Fashion Vietnam?</b>
-
-                    <p>Được thông báo về những khách mới, xu hướng và chương trình khuyến mãi độc quyền bằng cách nhập
-                        địa
-                        chỉ email của bạn dưới ‘Kết nối’ ở cuối trang chủ của chúng tôi. Tùy chọn email có thể dễ dàng
-                        được
-                        quản lý trong ‘Tài khoản của tôi’.</p>
-
                     <b>Làm cách nào để đặt hàng trên trang web của bạn?</b>
 
                     <p>Đặt hàng dễ dàng tại Fashion Vietnam. Dưới đây là cách thực hiện:</p>
 
-                    <p>Chọn một danh mục hoặc nhà thiết kế từ trình đơn điều hướng trên cùng hoặc tìm kiếm để khám phá một
+                    <p>Chọn một danh mục từ trình đơn điều hướng trên cùng hoặc tìm kiếm để khám phá một
                         phong cách hoặc xu hướng cụ thể.</p>
 
                     <p>Chọn kích thước của mặt hàng của bạn và nhấp vào ‘Thêm vào túi’. Khi bạn đã hoàn tất việc thêm các
                         mục của mình, hãy tiến hành thanh toán trong ‘Tóm tắt’.</p>
-
-                    <p>Đăng nhập vào tài khoản của bạn nếu bạn chưa làm như vậy. Nếu bạn chưa có tài khoản, chỉ cần nhập
-                        địa chỉ email của bạn để tiếp tục.</p>
 
                     <p>Nhập địa chỉ và thông tin thanh toán của bạn và chọn phương thức phân phối để hoàn thành đơn đặt
                     hàng của bạn. Sau khi mua hàng của bạn được xác nhận, nó sẽ được chuẩn bị cẩn thận và vận chuyển đến
@@ -53,12 +37,6 @@
 
                     <p>Nhân viên tư vấn dịch vụ khách hàng thân thiện của chúng tôi rất sẵn lòng hỗ trợ bạn đặt hàng qua
                         điện thoại.</p>
-
-                    <b>Tôi có thể tìm thấy lời khuyên về kích thước và phù hợp ở đâu?</b>
-
-                    <p>Nhấp vào ‘Hướng dẫn Kích thước’ trên trang của mục để xem biểu đồ chuyển đổi của chúng tôi. Chúng
-                    tôi cũng cung cấp thông tin phù hợp và các phép đo mô hình cho từng kiểu theo tab 'Kích thước & Phù
-                        hợp'.</p>
 
                     <b>Tôi có thể hủy hoặc thực hiện thay đổi cho đơn đặt hàng của mình không?</b>
 
@@ -84,14 +62,6 @@
                         toàn cầu, được đội ngũ của chúng tôi giám sát và tuyển chọn một cách chuyên nghiệp. Giá được xác
                         định bởi mỗi đối tác Fashion Vietnam, do đó giá của cùng một mặt hàng có thể khác nhau tùy thuộc vào vị
                         trí của bạn và nơi bạn đặt mua một mặt hàng.
-                        </p>
-
-                        <b>Khi nào thẻ của tôi bị tính phí?</b>
-
-                        <p>Nếu bạn thanh toán bằng thẻ ghi nợ hoặc PayPal, Fashion Vietnam sẽ thanh toán tại thời điểm đặt hàng
-                            của bạn trên trang web của chúng tôi. Nếu bạn thanh toán bằng thẻ tín dụng, thanh toán đầy đủ
-                            thường được thực hiện khi đơn đặt hàng của bạn đã sẵn sàng để giao hàng, mặc dù ngân hàng
-                            hoặc nhà phát hành thẻ của bạn có thể đặt trước số tiền đặt hàng trong tài khoản của bạn.
                         </p>
 
                         <b>Thông tin cá nhân của tôi có được bảo mật không?</b>

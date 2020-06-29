@@ -24,7 +24,7 @@ class OrderTableSeeder extends Seeder
                 'total_price' => 300000,
                 'created_at' => \Carbon\Carbon::create(2020, 3, 20, 6, 32, 34),
                 'updated_at' => \Carbon\Carbon::create(2020, 3, 20, 12, 15, 15),
-                'status' => 0
+                'status' => 2
             ],
             [
                 'customer_id' => 'KH4158745198',
@@ -36,7 +36,7 @@ class OrderTableSeeder extends Seeder
                 'total_price' => 300000,
                 'created_at' => \Carbon\Carbon::create(2020, 3, 26, 3, 33, 33),
                 'updated_at' => \Carbon\Carbon::create(2020, 3, 26, 10, 16, 16),
-                'status' => 1
+                'status' => 2
             ],
             [
                 'customer_id' => 'KH2648741598',
@@ -48,7 +48,7 @@ class OrderTableSeeder extends Seeder
                 'total_price' => 300000,
                 'created_at' => \Carbon\Carbon::create(2020, 3, 24, 3, 32, 32),
                 'updated_at' => \Carbon\Carbon::create(2020, 3, 24, 13, 17, 17),
-                'status' => 0
+                'status' => 2
             ],
         ]);
     }

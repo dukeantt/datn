@@ -120,7 +120,6 @@ class ProductController extends Controller
             $obj -> description = Input::get('description');
             $obj -> category_id = Input::get('category_id');
             $obj -> price = Input::get('price');
-//            $obj -> brand_id = Input::get('brand_id');
             $images = $request -> file('images');
             if($request -> hasFile('images')){
                 foreach ($images as $image) {

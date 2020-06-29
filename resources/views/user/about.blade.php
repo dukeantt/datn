@@ -2,7 +2,7 @@
 @section('page-title','Giới Thiệu')
 @section('content')
 <!-- Title Page -->
-<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url({{asset('img/contact_banner.jpg')}});">
+<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url({{asset('img/about_banner.jpg')}});">
     <h2 class="l-text2 t-center" style="color: White">
         Giới Thiệu
     </h2>
@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col-md-4 p-b-30">
                 <div class="hov-img-zoom">
-                    <img src="https://i.imgur.com/auo4PfT.jpg" height="450" alt="IMG-ABOUT">
+                    <img src="https://i.imgur.com/2orPkFo.png" height="450" alt="IMG-ABOUT">
                 </div>
             </div>
 
@@ -24,7 +24,7 @@
                 </h3>
 
                 <p class="p-b-28">
-                    Fashion Vietnam cam kết bán hàng chính hãng công ty phân phối, nguồn gốc rõ ràng, đảm bảo chất lượng . Sản phẩm đều có tem cào chứng nhận của bộ Công An và bộ Y Tế kiểm định . Cam kết không bán hàng giả, hàng kém chất lượng , đền gấp 100 lần giá trị sản phẩm nếu phát hiện hàng giả .
+                    Fashion Vietnam cam kết bán hàng chính hãng công ty phân phối, nguồn gốc rõ ràng, đảm bảo chất lượng . Cam kết không bán hàng giả, hàng kém chất lượng , đền gấp 100 lần giá trị sản phẩm nếu phát hiện hàng giả .
                 </p>
 
                 <p class="p-b-28">

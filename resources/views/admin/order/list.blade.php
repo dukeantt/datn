@@ -24,9 +24,9 @@
             <tr>
                 <th style="text-align: center">ID Khách hàng</th>
                 <th style="text-align: center">Người đặt</th>
-                <th style="text-align: center">Tên Khách hàng</th>
+                <th style="text-align: center">Thông tin gửi hàng</th>
                 <th style="text-align: center">Thời gian</th>
-                <th style="text-align: center">Thông tin</th>
+                <th style="text-align: center">Thông tin sản phẩm</th>
                 <th style="text-align: center">Trạng thái</th>
                 <th class="black-icon" style="text-align: center">Thao tác</th>
             </tr>
@@ -35,7 +35,7 @@
             @foreach($obj as $item)
                 <tr class="odd gradeX row-item" id="row-item-{{$item->id}}">
                     <td style="text-align: center">{{$item -> customer_id}}</td>
-                    <th style="text-align: center">nguyenmanhduc197</th>
+                    <th style="text-align: center">{{$item->ship_name}}</th>
                     <td style="text-align: center">{!! $item->shipInformation !!}</td>
                     <td>{{$item -> created_at}}</td>
                     <td>

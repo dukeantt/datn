@@ -10,7 +10,6 @@ use App\Order;
 use App\OrderDetail;
 use App\Product;
 use App\ShoppingCart;
-use App\Subscribed;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -133,13 +132,6 @@ class ShoppingCartController extends Controller
                 $email = Input::get('email');
                 if(Input::has('status') && Input::get('status') == 1){
                     $status = Input::get('status');
-                    $customer = new Subscribed();
-                    $customer -> email = $email;
-                    $customer -> name = $ship_name;
-                    $customer -> address = $ship_address;
-                    $customer -> phone = $ship_phone;
-                    $customer -> status = $status;
-                    $customer -> save();
                 }
                 $order = new Order();
                 $order->customer_id = 'KH' . round(microtime(true) * 1000);

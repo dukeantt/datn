@@ -1048,11 +1048,9 @@
                     </p>
 
                     <div class="flex-m p-t-30">
-                        <a href="https://www.facebook.com/GS-GYM-330250914034839/"
+                        <a href="https://www.facebook.com/fashionvietnam.vn/"
                            class="fs-18 color1 p-r-20 fa fa-facebook"></a>
-                        <a href="https://www.instagram.com/wheystore.vn/"
-                           class="fs-18 color1 p-r-20 fa fa-instagram"></a>
-                        <a href="https://www.youtube.com/channel/UCiAZ1_f4d_oWQ1BsHLkBVZg"
+                        <a href="https://www.youtube.com/channel/UC0pZaNTzixgpaddyXV_9Sjg"
                            class="fs-18 color1 p-r-20 fa fa-youtube-play"></a>
                     </div>
                 </div>

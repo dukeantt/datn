@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Input;
 
 class Product extends Model
 {
@@ -77,6 +78,14 @@ class Product extends Model
         $all_product = Product::where('status', 1)
             ->orderBy('price', 'asc')
             ->get();
+        if (Input::has('categoryId') && Input::get('categoryId') != 0) {
+            $chosen_category = Input::get('categoryId');
+            $all_product = Product::where('status', 1)
+                ->where('category_id', $chosen_category)
+                ->orderBy('price', 'asc')
+                ->get();
+
+        }
         return $all_product;
     }
 
@@ -85,6 +94,13 @@ class Product extends Model
         $all_product = Product::where('status', 1)
             ->orderBy('price', 'desc')
             ->get();
+        if (Input::has('categoryId') && Input::get('categoryId') != 0) {
+            $chosen_category = Input::get('categoryId');
+            $all_product = Product::where('status', 1)
+                ->where('category_id', $chosen_category)
+                ->orderBy('price', 'desc')
+                ->get();
+        }
         return $all_product;
     }
 }
