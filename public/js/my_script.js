@@ -91,6 +91,28 @@ $(document).click(function () {
     $('.shopkeeper-mini-cart').fadeOut();
 })
 
+$('#button_offcanvas_sidebar_left').click(function () {
+    $('#sorting').toggle();
+});
+
+$('#sort_price_default').click(function () {
+    $('#price_down').hide()
+    $('#price_up').hide()
+    $('#default').show()
+})
+
+$('#sort_price_up').click(function () {
+    $('#price_down').hide()
+    $('#price_up').show()
+    $('#default').hide()
+})
+
+$('#sort_price_down').click(function () {
+    $('#price_down').show()
+    $('#price_up').hide()
+    $('#default').hide()
+})
+
 function updateCart(){
     var products = [
         {name: "_token", value: $('meta[name="csrf-token"]').attr('content')},

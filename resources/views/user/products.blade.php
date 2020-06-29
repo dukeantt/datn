@@ -52,21 +52,25 @@
                                                      aria-expanded="false" aria-controls="offCanvasLeft1">
 										<span class="filters-text">
 											<i class="spk-icon spk-icon-menu-filters"></i>
-											Filter
+											Sắp xếp
                                         </span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="large-12 mobile-columns-2 ">
-                                            <ul class="products columns-6">
-                                                @foreach($obj as $productItem)
-                                                    @if ($loop->index % 6 == 0 || $loop->index == 0)
-                                                        <?php $class = "first"?>
-                                                    @elseif( $loop->index % 5 == 0)
-                                                        <?php $class = "last"?>
-                                                    @else
-                                                        <?php $class = ""?>
-                                                    @endif
+                                        <div id="sorting" style="margin-left: 93px;margin-top: -57px;border: solid;position: absolute;z-index: 1;background-color: white;width: 145px; display: none">
+                                            @include('user.sorting')
+                                        </div>
+                                        <div id="default">
+                                            <div class="large-12 mobile-columns-2">
+                                                <ul class="products columns-6">
+                                                    @foreach($obj as $productItem)
+                                                        @if ($loop->index % 6 == 0 || $loop->index == 0)
+                                                            <?php $class = "first"?>
+                                                        @elseif( $loop->index % 5 == 0)
+                                                            <?php $class = "last"?>
+                                                        @else
+                                                            <?php $class = ""?>
+                                                        @endif
                                                         <li class="product type-product post-5135 status-publish {{$class}} instock product_cat-stayhome product_cat-accessories has-post-thumbnail sale shipping-taxable purchasable product-type-simple animate">
                                                             <div class="product_thumbnail_wrapper ">
                                                                 <a href="{{url()->current().'/'.$productItem->id}}"
@@ -98,10 +102,16 @@
                                                                 <div class="product_after_shop_loop_switcher"></div>
                                                             </div>
                                                         </li>
-                                                @endforeach
-                                            </ul>
+                                                    @endforeach
+                                                </ul>
+                                            </div>
                                         </div>
-
+                                        <div id="price_down" style="display: none">
+                                            @include('user.all-product-down')
+                                        </div>
+                                        <div id="price_up" style="display: none">
+                                            @include('user.all-product-up')
+                                        </div>
                                         <div class="woocommerce-after-shop-loop-wrapper">
                                             <div class="getbowtied_ajax_load_button finished" style="display: block;"><a
                                                     getbowtied_ajax_load_more_processing="0" class="disabled"></a></div>
@@ -112,7 +122,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <footer id="site-footer" class="">
                     <div class="site-footer-copyright-area">

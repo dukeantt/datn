@@ -71,4 +71,20 @@ class Product extends Model
         $arrayImg = explode('&', $imgURL);
         return $arrayImg;
     }
+
+    public static function productPriceUp()
+    {
+        $all_product = Product::where('status', 1)
+            ->orderBy('price', 'asc')
+            ->get();
+        return $all_product;
+    }
+
+    public static function productPriceDown()
+    {
+        $all_product = Product::where('status', 1)
+            ->orderBy('price', 'desc')
+            ->get();
+        return $all_product;
+    }
 }
