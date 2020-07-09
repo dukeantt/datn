@@ -12,7 +12,7 @@
 	- Editor -> any
 	Recommended Sublime, PHPStorm.
 
-2. Run Apache and MySql Server from Xampp control panel
+2. Run Apache and MySql Server from WAMP control panel
 3. Open Web Browser:
 	- localhost/phpmyadmin
 	- create a new DB with name "datn"
@@ -37,9 +37,10 @@
 **Password: admin01
 
 env:
-```APP_NAME=Laravel
+```
+APP_NAME=Laravel
 APP_ENV=local
-APP_KEY=base64:FzKxXyiKjzIJMT8Nr34T8aU7mxIdbN63IdLmRQCXiYw=
+APP_KEY=base64:wxXNZTt4PdE6Vk9YKFtTeaZGlAXolDOjwpHMtyHp7BA=
 APP_DEBUG=true
 APP_URL=http://localhost
 
@@ -70,9 +71,10 @@ PUSHER_APP_CLUSTER=mt1
 MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
 MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 
-CLOUDINARY_API_KEY=358885834193318
-CLOUDINARY_API_SECRET=Gdtkuq1sn_GiLx9CHRRJizWc9Nk
-CLOUDINARY_CLOUD_NAME=dzbi63fko
+CLOUDINARY_API_KEY=973779211346115
+CLOUDINARY_API_SECRET=jtVmGuUIMvFtSTUCLUobcZwhkxo
+CLOUDINARY_CLOUD_NAME=fashionvietnam
+
 ```
 
 

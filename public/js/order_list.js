@@ -180,10 +180,7 @@ $(function () {
                         new_content += '</tr>';
                     }
                 }
-                // $('#dataTables-example_filter').remove();
-                // $('#dataTables-example_info').remove();
-                // $('#dataTables-example_paginate').remove();
-                // $('#dataTables-example_length').remove();
+
                 $('#order_list').html(new_content);
             },
             error: function () {
@@ -226,8 +223,9 @@ $(document).on('click', '.fa-check-circle' ,function(){
     var status = '2';
     var status_text = 'Hoàn thành';
     if(confirm('Bạn có chắc muốn hoàn thành đơn hàng?')){
-        // location.href = '/admin/order/change-status?id=' + deleteId + '&status=2';
         changeStatus(deleteId, status, status_text);
+        $(".order-pending-banner").css("background-color", "#66ff66")
+        $(".order-pending-banner").css("color", "white")
     }
 });
 

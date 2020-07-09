@@ -31,7 +31,7 @@
 <div class="wrapper">
     <div class="sidebar" data-color="blue">
 
-        <div class="sidebar-wrapper">
+        <div class="sidebar-wrapper" style="background-color: #EC7A5C">
             <div class="logo">
                 <a href="/admin" class="simple-text logo-mini">
                     FV

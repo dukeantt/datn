@@ -81,8 +81,11 @@
                 $(".preview_images").addClass('hidden');
                 $(".preview_image").remove();
             });
-            if($(".alert-success")[0]){
-                swal({
+            if($(".alert-success")[0])
+            {
+                swal
+                (
+                    {
                         title: 'Saved Success',
                         type: 'success',
                         allowOutsideClick: true,
@@ -92,7 +95,8 @@
                         if (isConfirm) {
                             window.location.href = '/admin/product';
                         }
-                    });
+                    }
+                );
             }
         });
 

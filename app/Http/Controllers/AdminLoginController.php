@@ -57,16 +57,16 @@ class AdminLoginController extends Controller
             'email' => 'required|email',
             'confirm-password' => 'required|min:6|max:20|same:password',
             'full_name' => 'required|min:2',
-            'address' => 'required|min:5',
+//            'address' => 'required|min:5',
             'DOB' => 'required',
-            'phone' => 'required|min:10|max:11'
+//            'phone' => 'required|min:10|max:11'
         ], [
             'username.required' => 'Bạn phải nhập tên đăng nhập',
             'password.required' => 'Bạn phải nhập tên mật khẩu',
             'confirm-password.required' => 'Bạn phải nhập tên mật khẩu',
             'email.required' => 'Bạn phải nhập email',
             'full_name.required' => 'Bạn phải nhập tên đầy đủ của bạn',
-            'address.required' =>'Bạn phải nhập địa chỉ',
+//            'address.required' =>'Bạn phải nhập địa chỉ',
             'DOB' => 'Bạn phải nhập ngày tháng năm sinh',
             'phone' => 'Bạn phải nhập số điện thoại',
             'username.min' => 'Tên đăng nhập từ 6-20 ký tự',
@@ -79,8 +79,8 @@ class AdminLoginController extends Controller
             'email.email' => 'Email không đúng định dạng',
             'full_name.min' => 'Tên phải có trên 4 kí tự',
             'address.min' => 'Địa chỉ phải từ 5 ký tự trở lên',
-            'phone.min' => 'Số điện thoại có 10 hoặc 11 chữ số',
-            'phone.max' => 'Số điện thoại có 10 hoặc 11 chữ số'
+//            'phone.min' => 'Số điện thoại có 10 hoặc 11 chữ số',
+//            'phone.max' => 'Số điện thoại có 10 hoặc 11 chữ số'
 
         ]);
 
@@ -96,9 +96,9 @@ class AdminLoginController extends Controller
         $obj->password = hash::make(Input::get('password'));
         $obj->full_name = Input::get('full_name');
         $obj->email = Input::get('email');
-        $obj->address = Input::get('address');
+//        $obj->address = Input::get('address');
         $obj->gender = str_replace('option','',Input::get('gender'));
-        $obj->phone = Input::get('phone');
+//        $obj->phone = Input::get('phone');
         $obj->DOB = Input::get('DOB');
         $obj->role = 1;
         $obj->status = 1;
